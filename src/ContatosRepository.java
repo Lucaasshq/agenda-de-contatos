@@ -13,12 +13,14 @@ public class ContatosRepository {
         contatoSet.add(new Contato(nome, telefone));
     }
 
-    public void exibirContato(){
+    public Set<Contato> exibirContato(){
+        Set<Contato> response = new HashSet<>();
         if(contatoSet.isEmpty()) {
             System.out.println("Lista de contatos vazia");
         } else  {
-            System.out.println(contatoSet);
+            response.addAll(contatoSet);
         }
+        return response;
     }
 
     public Set<Contato> pesquisarPornome(String nome) {
