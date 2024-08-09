@@ -1,3 +1,5 @@
+package AgendaContatos;
+
 import java.util.Objects;
 
 public class Contato {
